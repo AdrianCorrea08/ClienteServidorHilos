@@ -10,4 +10,4 @@ Ha revisado las secciones sobre el uso de la clase Thread y la palabra clave syn
 de esta lección.
 
 ## Resumen
-Abrirá un proyecto en el que se adquieren camisas de una tienda. Se le proporcionará el código de lectura de archivos. Su tarea es agregar el código de manejo de # # excepciones adecuado.
+Abrirá un proyecto en el que se adquieren camisas de una tienda. Se le proporcionará el código de lectura de archivos. Su tarea es agregar el código de manejo de excepciones adecuado.
