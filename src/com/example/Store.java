@@ -39,6 +39,16 @@ public class Store {
 
         //TODO add delaying code here
         
+        int seconds = (int) (Math.random() * 3 + 1); 
+        System.out.println("Sleeping for " + seconds + " seconds");
+        
+        try {
+            Thread.sleep(seconds * 1000);
+        } 
+        catch (InterruptedException e) { 
+            System.out.println("Interrupted");
+        }
+        
         return true;
     }
 }

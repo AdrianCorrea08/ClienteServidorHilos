@@ -25,7 +25,7 @@ public class PurchasingAgent {
         }
     }
     
-    //Creacion del motodo
+    //Creacion del metodo
     public PurchasingAgent() { 
         System.out.println("Creating a purchasing agent");
         Thread t = Thread.currentThread();
