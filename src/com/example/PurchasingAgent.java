@@ -16,13 +16,23 @@ public class PurchasingAgent {
         //instanciamos el store
         Store store = Store.getInstance();
         
-        if (store.getShirtCount() > 0 && store.authorizeCreditCard("1234", 15.00)) {
-            Shirt shirt = store.takeShirt(); 
-            System.out.println("The shirt is ours!"); 
-            System.out.println(shirt);
-        } else {
-            System.out.println("No shirt for you");
-        }
+        //if (store.getShirtCount() > 0 && store.authorizeCreditCard("1234", 15.00)) {
+            //Shirt shirt = store.takeShirt(); 
+            //System.out.println("The shirt is ours!"); 
+            //System.out.println(shirt);
+        //} else {
+            //System.out.println("No shirt for you");
+        //}
+        
+        synchronized (store) {
+            if (store.getShirtCount() > 0 && store.authorizeCreditCard("1234", 15.00)) {
+                Shirt shirt = store.takeShirt();
+                System.out.println("The shirt is ours!");
+                System.out.println(shirt);
+            } else {
+                System.out.println("No shirt for you");
+            }
+           }
     }
     
     //Creacion del metodo
